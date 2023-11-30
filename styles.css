@@ -2,35 +2,24 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
 }
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 15px 0;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.container {
     text-align: center;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
 }
 
-nav a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
+#videoContainer {
+    display: none;
+    margin-top: 20px;
 }
-
-section {
-    padding: 40px;
-}
-
-/* Add more styles as needed */
