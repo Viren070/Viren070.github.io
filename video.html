@@ -20,11 +20,21 @@
             height: 100vh;
             object-fit: cover;
         }
+
+        .volume-instructions {
+            text-align: center;
+            margin-top: 20px;
+            color: #555;
+        }
     </style>
 </head>
 <body>
+    
+    <div class="volume-instructions">
+        <p>Please adjust your device's volume to the maximum for the best experience.</p>
+    </div>
 
-    <video autoplay width="100%" heigh="100%">
+    <video autoplay volume="1.0" width="100%" height="100%">
         <source src="video.mp4" type="video/mp4">
     </video>
 
