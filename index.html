@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Screen</title>
+    <link rel="stylesheet" href="../navbar.css">
+    <style>
+        body {
+            height: 100vh;
+            margin: 0;
+            background-color: #181a1b; 
+            font-family: Arial, sans-serif;
+        }
+
+        #content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-bottom: 20px;
+        }
+
+        button:hover {
+            background-color: #216a94;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <button onclick="navigateTo('Illusion/')">Optical Illusion</button>
+        <button onclick="navigateTo('Emulator_Manager/')">Emulator Manager</button>
+        <button onclick="navigateTo('My-Singing-Monsters-Tools/')">My Singing Monsters Tools</button>
+    
+        <script>
+            function navigateTo(page) {
+                window.location.href = page;
+            }
+        </script>
+    </div>
+    <script src="../navbar.js"></script>
+</body>
+</html>

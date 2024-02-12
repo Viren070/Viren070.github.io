@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optical Illusion</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            background-color: #000; /* Set background color to black */
+        }
+
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        video {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+    <video autoplay volume="1.0" width="100%" height="100%" onended="redirect()">
+        <source src="video.mp4" type="video/mp4">
+    </video>
+
+    <script>
+        function redirect() {
+            window.location.href = "illusion_end.html";
+        }
+    </script>
+</body>
+</html>

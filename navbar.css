@@ -1,0 +1,44 @@
+.navbar {
+    background-color: #0d0d0d; /* Darker grey */
+    color: #fff; /* White text */
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, sans-serif; /* Specify the font for the navbar */
+}
+
+.navbar a {
+    color: #fff; /* White text */
+    background-color: #0d0d0d; /* Darker grey */
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    display: inline-block; /* Add this line */
+    vertical-align: middle; /* Add this line */
+}
+
+.navbar a:hover {
+    background-color: #333; /* Slightly lighter grey on hover */
+}
+
+.dropdown-content a {
+    display: block;
+    font-size: 18px;
+    padding: 10px 0;
+    color: #fff; /* White text */
+    background-color: #0d0d0d; /* Darker grey */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #0d0d0d; /* Darker grey */
+    min-width: 200px; /* Increased to accommodate larger text */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
